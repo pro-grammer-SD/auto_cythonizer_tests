@@ -1,6 +1,8 @@
-def fib(n):
-    if n <= 1:
-        return n
-    return fib(n-1) + fib(n-2)
+import time
+import _fib_func as fib
 
-print(fib(40))
+start = time.time()
+print(fib.fib(40))
+end = time.time()
+
+print("Time:", end - start)
